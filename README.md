@@ -8,6 +8,10 @@ En este dockerfile, creo dos contenedores. Uno para odoo, al que he llamado “d
 al que he llamado “dam22_postgresql”. 
 El puerto que he designado para "dam22_odoo" es el 8069, mientras que para "dam22_postgres" utilizaré el 5432.
 
+![Captura de pantalla (142)](https://user-images.githubusercontent.com/32130215/221934152-8322c93e-6791-4fc6-a644-f395d6866c5a.png)
+
+![Captura de pantalla (143)](https://user-images.githubusercontent.com/32130215/221934208-a2ed3f0a-7de7-4e6b-a1ad-65597a794f7f.png)
+
 
 
 Luego, abro el terminal, y ya estando situado dentro del directorio odooPlugin, introduzco el siguiente comando: docker-compose up 
@@ -21,6 +25,7 @@ el puerto que va a utilizar el contenedor o el nombre de la conexión. También 
 que vayamos a utilizar, en mi caso tengo que descargar el driver para postgreSQL. Una vez que haya rellenado todos los campos y descargado el driver correspondiente, 
 hago click en "Test connection". Si todos los datos están correctos, la conexión se realizará con éxito.
 
+![Captura de pantalla (144)](https://user-images.githubusercontent.com/32130215/221934450-0d05079a-617c-4ee5-a8bc-4a255a611fac.png)
 
 
 A continuación, en la barra de direcciones del navegador, introduzco: localhost:8069 (ya que el puerto designado en mi dockerfile es el 8069) 
