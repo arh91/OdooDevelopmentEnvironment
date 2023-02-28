@@ -1,7 +1,4 @@
 # OdooDevelopmentEnvironment
-En Docker, levanto un contenedor para Odoo y otro para Postgres para la conexión con bases de datos.
-
-
 Creo un directorio al que he llamado “odooPlugin”, y dentro de dicho directorio creo el archivo “docker-compose.yml”.
 
 En este dockerfile, creo dos contenedores. Uno para odoo, al que he llamado “dam22_odoo”, y otro para la base de datos con postgreSQL, 
