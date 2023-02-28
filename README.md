@@ -31,5 +31,6 @@ hago click en "Test connection". Si todos los datos están correctos, la conexi�
 A continuación, en la barra de direcciones del navegador, introduzco: localhost:8069 (ya que el puerto designado en mi dockerfile es el 8069) 
 Y me redirigirá a la página de configuración de Odoo, donde rellenaré los campos correspondientes y luego click en “Create database”.
 
-![Captura de pantalla (145)](https://user-images.githubusercontent.com/32130215/221935114-4d3b792a-1604-4977-b13b-8e7b3e5791da.png)
+![Captura de pantalla (145)](https://user-images.githubusercontent.com/32130215/221935834-f1211473-e855-4c46-aea4-f3d3ee86522e.png)
+
 
