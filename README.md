@@ -53,7 +53,7 @@ odoo (después de -r) es el nombre de usuario (consultar el docker-compose).
 Odoo (después de w) es el nombre de usuario (consultar el docker-compose).
 
 
-En el fichero __manifest__.py es donde podemos cambiar las propiedades del módulo.
+En el fichero __manifest.py__ es donde podemos cambiar las propiedades del módulo.
 
 Cada vez que cambiemos alguna propiedad debemos volver a ejecutar de nuevo el comando: 
 
