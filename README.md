@@ -66,6 +66,6 @@ dam21 es el nombre del módulo sobre el que estamos trabajando.
 odoodb es el nombre de la base de datos asociada a nuestro modulo.
 db es el nombre del servicio (el que le dimos en nuestro docker-compose.yml)
 odoo (después de -r) es el nombre de usuario (consultar el docker-compose).
-Odoo (después de w) es el nombre de usuario (consultar el docker-compose).
+Odoo (después de -w) es la contraseña de usuario (consultar el docker-compose).
 
 
