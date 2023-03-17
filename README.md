@@ -40,6 +40,9 @@ Se nos abrirá un terminal para trabajar dentro del contenedor.
 
 Luego si hacemos click sobre el contenedor dam22_odoo y seleccionamos "Attach Visual Studio Code", se nos abrirá una interfaz dentro del contenedor Docker (que obviamente el aspecto y componentes de esa interfaz será distinto al de la interfaz de inicio de VisuaL Studio).
 
+Vamos a la ruta mnt/extra-addons y tecleamos el siguiente comando:
+odoo scaffold dam21 .
+
 Dentro del contenedor de Odoo, tecleamos el siguiente comando:
 bd odoo -u dam21 -d odoodb –dbhost=db -r odoo -w odoo
 
