@@ -31,3 +31,31 @@ Y me redirigirá a la página de configuración de Odoo, donde rellenaré los ca
 ![Captura de pantalla (145)](https://user-images.githubusercontent.com/32130215/221935834-f1211473-e855-4c46-aea4-f3d3ee86522e.png)
 
 
+Ahora abrimos Visual Studio Code, y en la extensión de Docker consultamos la lista de contenedores creados en nuestro equipo.
+Buscamos los contenedores "dam22_odoo" y "dam22_postgresql". Como ya los tenemos funcionando, nos situamossobre "dam22_odoo" y hacemos click en "Attach a Shell".
+
+![Captura de pantalla (163)](https://user-images.githubusercontent.com/32130215/225894260-9a7b500e-58f5-4748-ab83-1916ba5a0e92.png)
+
+Se nos abrirá un terminal para trabajar dentro del contenedor.
+
+Luego si hacemos click sobre el contenedor dam22_odoo y seleccionamos "Attach Visual Studio Code", se nos abrirá una interfaz dentro del contenedor Docker (que obviamente el aspecto y componentes de esa interfaz será distinto al de la interfaz de inicio de VisuaL Studio).
+
+Dentro del contenedor de Odoo, tecleamos el siguiente comando:
+bd odoo -u dam21 -d odoodb –dbhost=db -r odoo -w odoo
+
+Donde:
+
+-u significa update. Actualiza el módulo correspondiente y sus componentes (si el módulo no existe entonces lo crea).
+dam21 es el nombre del módulo que queremos crear.
+odoodb es el nombre de la base de datos adonde queremos guardar el modulo.
+db es el nombre del servicio (el que le dimos en nuestro docker-compose.yml)
+odoo (después de -r) es el nombre de usuario (consultar el docker-compose).
+Odoo (después de w) es el nombre de usuario (consultar el docker-compose).
+
+
+En el fichero __manifest__.py es donde podemos cambiar las propiedades del módulo.
+
+Cada vez que cambiemos alguna propiedad debemos volver a ejecutar de nuevo el comando: 
+
+bd odoo -u dam21 -d odoodb –dbhost=db -r odoo -w odoo
+
