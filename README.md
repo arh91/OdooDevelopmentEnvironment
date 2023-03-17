@@ -43,8 +43,21 @@ Luego si hacemos click sobre el contenedor dam22_odoo y seleccionamos "Attach Vi
 Vamos a la ruta mnt/extra-addons y tecleamos el siguiente comando:
 odoo scaffold dam21 .
 
+![Screenshot from 2023-03-14 10-00-36](https://user-images.githubusercontent.com/32130215/225902153-f231ef67-049e-4357-9e17-2f5bb3e28bf7.png)
+
+
+En donde dam21 es el nombre del módulo que queremos crear. El punto que aparece al final hace referencia al directorio actual en el que nos encontramos (extra-addons).
+Con este comando nos genera la estructura de archivos del nuevo módulo dentro de nuestro contenedor.
+
+De entre los archivos que se generan aparece el manifest.py, donde podremos configurar algunas propiedades asociadas al módulo creado.
+Éste es el aspecto que tendría un __manifest.py__
+
+![Screenshot from 2023-03-14 10-03-55](https://user-images.githubusercontent.com/32130215/225903426-dfe57efc-f993-422e-9b6f-546cfcf2541b.png)
+
+
 Dentro del contenedor de Odoo, tecleamos el siguiente comando:
-bd odoo -u dam21 -d odoodb –dbhost=db -r odoo -w odoo
+
+![Screenshot from 2023-03-14 10-30-42](https://user-images.githubusercontent.com/32130215/225904059-71173d1d-735e-4afa-9afd-38df21a1247a.png)
 
 Donde:
 
@@ -54,6 +67,7 @@ odoodb es el nombre de la base de datos adonde queremos guardar el modulo.
 db es el nombre del servicio (el que le dimos en nuestro docker-compose.yml)
 odoo (después de -r) es el nombre de usuario (consultar el docker-compose).
 Odoo (después de w) es el nombre de usuario (consultar el docker-compose).
+
 
 
 En el fichero __manifest.py__ es donde podemos cambiar las propiedades del módulo.
