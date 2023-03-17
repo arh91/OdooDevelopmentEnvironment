@@ -55,7 +55,7 @@ De entre los archivos que se generan aparece el manifest.py, donde podremos conf
 ![Screenshot from 2023-03-14 10-03-55](https://user-images.githubusercontent.com/32130215/225903426-dfe57efc-f993-422e-9b6f-546cfcf2541b.png)
 
 
-Dentro del contenedor de Odoo, tecleamos el siguiente comando:
+Dentro del directorio del módulo que se acaba de crear (de nombre dam21), tecleamos el siguiente comando:
 
 ![Screenshot from 2023-03-14 10-30-42](https://user-images.githubusercontent.com/32130215/225904059-71173d1d-735e-4afa-9afd-38df21a1247a.png)
 
@@ -67,7 +67,6 @@ odoodb es el nombre de la base de datos adonde queremos guardar el modulo.
 db es el nombre del servicio (el que le dimos en nuestro docker-compose.yml)
 odoo (después de -r) es el nombre de usuario (consultar el docker-compose).
 Odoo (después de w) es el nombre de usuario (consultar el docker-compose).
-
 
 
 En el fichero __manifest.py__ es donde podemos cambiar las propiedades del módulo.
